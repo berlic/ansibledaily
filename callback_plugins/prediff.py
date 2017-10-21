@@ -36,7 +36,6 @@ class CallbackModule(DefaultCallback):
             for d in diff:
                 for ab in ('after','before'):
                     fd, fn = mkstemp()
-                    print fn
                     with open(fn, 'w') as f:
                         f.write(d[ab])
                     try:
